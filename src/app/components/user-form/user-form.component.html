@@ -101,6 +101,14 @@
                     } -->
                 </div>
               }
+              <div class="form-check my-2">
+                <input type="checkbox"
+                       class="form-check-input"
+                       [(ngModel)] = "user.admin"
+                       name="admin"
+                >
+                <label class="form-check-label">Admin</label>
+              </div>
                 <div>
                     <button type="submit" class="btn btn-primary m-2"> <!-- [disabled]="userForm.invalid" -->
                         {{(user.id > 0)? 'Update': 'Create'}}
